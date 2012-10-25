@@ -13,6 +13,11 @@ Remove Constraint
 
 alter table proposal remove constraint fk_user_id foreign key (id) references "user"(id) match full; 
 
+Alter column
+=====
+
+ALTER TABLE proposal ALTER is_speaking TYPE int USING CASE WHEN is_speaking=FALSE THEN 0 ELSE 1 END;
+
 Add FK constraint
 ======
 alter table proposal add constraint fk_user_id foreign key (user_id) references "user"(id) match full; 
