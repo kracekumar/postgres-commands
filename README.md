@@ -3,6 +3,16 @@ postgres-commands
 
 My postgres learning 
 
+Create Database
+===
+
+create database hgtv;
+
+Grant Access to database hgtv for user sqlalchemy
+====
+
+grant all privileges on database hgtv to sqlalchemy;
+
 Add Column
 ==========
 
