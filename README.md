@@ -13,6 +13,13 @@ Grant Access to database hgtv for user sqlalchemy
 
 grant all privileges on database hgtv to sqlalchemy;
 
+Create Table
+====
+CREATE TABLE cities (
+    name            varchar(80),
+    location        point
+);
+
 Add Column
 ==========
 
